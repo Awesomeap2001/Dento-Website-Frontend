@@ -1,0 +1,634 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.topnav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    padding: 5px 10px;
+    color: #707070;
+    text-decoration: none;
+}
+
+.right a {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.right a:hover {
+    color: #00aeef;
+}
+
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+nav>ul {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+
+}
+
+a {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #00aeef;
+    transition: 300ms;
+}
+
+.hover-btn {
+    padding: 15px 20px;
+    background-color: #00aeef;
+    border: 2px solid #00aeef;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hover-btn:hover {
+    background-color: transparent;
+    color: #00aeef;
+    transition: 500ms;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    position: absolute;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-size: 13px;
+    display: none;
+}
+
+.dropdownHover:hover .dropdown {
+    display: block;
+}
+
+
+.dropdown li {
+    padding: 10px 0;
+    padding-right: 25px;
+    border-bottom: 1px solid rgba(242, 244, 248, 0.7);
+}
+
+.itemDrop {
+    position: absolute;
+    margin-left: 143px;
+    margin-top: -25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-size: 13px;
+    display: none;
+    width: 170px;
+}
+
+.itemDrop li {
+    padding: 10px 0;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(242, 244, 248, 0.7);
+}
+
+.ItemDropHover:hover .itemDrop {
+    display: block;
+}
+
+.evenDropdown {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-size: 13px;
+    display: none;
+    width: 155px;
+}
+
+.evenDropdown li {
+    padding: 10px 0;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(242, 244, 248, 0.7);
+}
+
+.evenDropdownHover:hover .evenDropdown {
+    display: block;
+}
+
+
+
+
+/* Welcome Section */
+
+.welcome {
+    background-image: url(img/background/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.welcome-content {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.welcome-content div {
+    width: 70%;
+    margin: auto;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.welcome-content h2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.welcome-content p {
+    margin: 30px 0;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.welcome-content button {
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 0;
+}
+
+
+
+/* About us */
+
+.about {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-content {
+    width: 60%;
+    padding: 30px;
+}
+
+h2 {
+    width: fit-content;
+    font-size: 36px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #00aeef;
+}
+
+.about-content p {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #707070;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.about-progress {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.about-progress h6,
+span {
+    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 10px;
+}
+
+.horizontalLine {
+    border-bottom: 2px solid #f4f4f4;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Icons Section */
+.icons {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-card {
+    text-align: center;
+    line-height: 1.9;
+}
+
+.icon-card i {
+    color: #00aeef;
+    font-size: 60px;
+}
+
+.icon-card p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+/* Our Services */
+.ourServices {
+    background: url('img/background/13.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ourServices>div {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.ourServices-content {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+}
+
+.services {
+    width: 33.33%;
+    float: left;
+    padding: 30px 10px;
+    color: white;
+    line-height: 1.9;
+}
+
+/* Pricing */
+.pricing {
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.pricing table {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.pricing table>tr,
+th,
+td {
+    padding: 15px 20px;
+    background-color: #f4f4f4;
+    color: #707070;
+    font-size: 14px;
+    text-align: left;
+    border: 2px solid white;
+}
+
+.pricing thead tr th {
+    background-color: #00aeef;
+    color: white;
+}
+
+/* Appointment */
+.appointment {
+    background: url(/img/background/12.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.appointment>div {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.appointment-content {
+    width: 80%;
+    margin: auto;
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+
+.appointment-content form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.appointment-content input,
+textarea,
+select {
+    width: 48%;
+    margin: 15px 10px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+
+.appointment-content option {
+    background-color: white;
+    color: black;
+}
+
+/* Our Dentist */
+.dentist {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.dentist-content {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+}
+
+.dentist-card {
+    background-color: #f4f4f4;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dentist-info h5 {
+    font-size: 18px;
+    padding: 15px;
+}
+
+.dentist-social i {
+    font-size: 14px;
+    background-color: white;
+    color: #00aeef;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+}
+
+.dentist-social i:hover {
+    background-color: #00aeef;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.dentist-info {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.dentist-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.dentist-card:hover .dentist-social i {
+    visibility: visible;
+    transition: all 0.5s linear;
+}
+
+
+/* Quote Section*/
+
+.quote {
+    background: url('img/background/7.jpg') fixed no-repeat center center/cover;
+}
+
+.quote>div {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.quote-content {
+    width: 80%;
+    margin: auto;
+    padding: 70px 0;
+    color: white;
+    line-height: 1.7;
+}
+
+
+/* blog Section */
+.blog {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.blog-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.blog-card {
+    margin: 15px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.blog-info {
+    margin-top: -20px;
+    padding: 20px 35px;
+    line-height: 1.7;
+
+}
+
+.blog-post {
+    margin: 15px 0;
+}
+
+.blog-post a {
+    color: #969696;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 0;
+    margin-right: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* Footer */
+
+footer {
+    background: url(img/background/3.jpg) fixed no-repeat center center/cover;
+}
+
+footer>div {
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    padding: 70px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer>div {
+    margin: 20px;
+}
+
+.footer h3 {
+    padding-bottom: 20px;
+}
+
+.footer-dento p,
+.footer-dento span {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 20px 0;
+}
+
+.footer-openingHours ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-openingHours span {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    flex: 50%;
+    list-style-type: none;
+}
+
+.footer-links a {
+    font-weight: lighter;
+    color: white;
+    line-height: 2.5;
+    font-size: 15px;
+    padding: 0;
+
+    &:hover {
+        color: #00aeef;
+        transition: all 0.3s linear;
+    }
+}
+
+.footer-newsletter p {
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.footer-newsletter input {
+    width: 80%;
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.footer-newsletter #send {
+    background-color: #00aeef;
+    padding: 11px 14px;
+    margin-left: -5px;
+    font-size: 16px;
+    height: 39px;
+
+    &:hover {
+        background-color: #00012c;
+        transition: all 0.3s linear;
+    }
+}
+
+.footer-newsletter>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-newsletter>div i {
+    font-size: 18px;
+    color: white;
+
+    &:hover {
+        color: #00aeef;
+        transition: all 0.3s linear;
+    }
+}
+
+.copyright {
+    color: #afafaf;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
